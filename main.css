@@ -19,7 +19,7 @@ body{
 }
 #big_wrapper{
 	border: 2px solid black;
-	max-width: 1000px;
+	max-width: 100%;
 	margin: 20px 0px; 
 	display:-webkit-box;
 	-webkit-box-orient: vertical;
@@ -27,8 +27,8 @@ body{
 }
 #top_header{
 	background: #B22222;
-	border: 2px solid black;
-	padding: 20px;
+	border:2px solid black;
+	padding:20px;
 }
 #top_menu{
 	background:black;
@@ -41,9 +41,10 @@ body{
 	font: bold 14px Tahoma;
 }
 #main_section{
+	-webkit-box-flex: 1;
 	float: left;
 	width:660px;
-	margin:30px; /* 720px, 280 left */
+	margin:30px; 
 }
 #side_news{
 	float:right;
@@ -54,7 +55,6 @@ body{
 	border: 2px solid black;
 }
 #the_footer{
-	clear:both;
 	text-align:center;
 	padding:20px;
 	border-top: 2px solid black;
