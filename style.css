@@ -121,7 +121,20 @@ header a:hover{
 }
 
 #boxes .box img{
-	width:200px;
+	width:300px;
+}
+
+/*Sidebar*/
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+/*Main-col*/
+article#main-col{
+	float:left;
+	width:65%;
 }
 
 footer{
