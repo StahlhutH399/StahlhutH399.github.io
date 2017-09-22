@@ -17,6 +17,10 @@ ul{
 	padding:0;
 }
 
+.download{
+	text-align:center;
+}
+
 .button_1{
 	height:38px;
 	background:#e8491d;
