@@ -12,6 +12,10 @@ body{
   overflow:hidden;  
 }
 
+.videos{
+	text-align:center;
+}
+
 .image{
 	text-align:center;
 }
