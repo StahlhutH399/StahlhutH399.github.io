@@ -1,8 +1,18 @@
-#My Python Story
+#Destiny
+
+import time
 
 def greeting():
-    print("Hello....")
-    response=input("do you want to play? (yes/no)")
+    print("You wake you in the middle of a junkyard filled with broken cars and destroyed junk, broken buildings, snowy soil, and a sense of danger all around you.")
+    input("(Press Enter To Continue)")
+    print("Unknown: " + "Guardian! Thank the Traveler I found you!")
+    input("")
+    print("You: What the hell is going on?")
+    input("")
+    print("You get your bearings on what the hell is going on and notice a robotic, floating, shell in front of you.")
+    input("")
+    print("Unknown: ")
+    response=("")
     return response
 
 def second_choice():
