@@ -39,10 +39,7 @@ if x=="Who are you?":
     y = haters()
     if y=="Hide":
         Hide()
-    elif y=="Fight":
-          fight()
-
-def fight():        
+    elif y=="Fight":        
         print("You try to punch them since you have no weapon but end up being killed from being shot with the electricity gun that they have.")
         input("")
         print("They then hear an explosion and retreat.")
@@ -51,16 +48,10 @@ def fight():
         input("")
         print("You gasp for air and look at the shell that has revived you.")
         response = input("(Tell me... Who are you?/Lets go.)")
-        return response
-    
-t = Hide()
 
-if t=="Tell me... Who are you?":
-    escape()
-elif t=="Let's go.":
-    escape 2()
+a = Hide()
 
-def escape():
+if a=="Tell me... Who are you?":
   print("Ghost: Fine... I am your Ghost, the traveler has sent me centuries ago to find you, now I have found you. Now lets get out of here!")
   input("")
   print("You push on forward to this body with a gun next to it. You check if it has ammo and luckily it does.")
@@ -84,5 +75,7 @@ def escape():
   print("Ghost: Alright it's ready, but it can only reach the city.")
   input("")
   print("Your Ghost transmats you into the ship and it flies away just in time.")
+  input("")
+  print("Coming Soon...")
    
-        
+ 
