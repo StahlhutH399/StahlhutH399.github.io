@@ -42,7 +42,7 @@ if x=="Who are you?":
     elif y=="Fight":
         b = Fight()
 
-def Fight()
+def Fight():
     print("You try to punch them since you have no weapon but end up being killed from being shot with the electricity gun that they have.")
     input("")
     print("They then hear an explosion and retreat.")
@@ -80,7 +80,7 @@ if b=="Tell me... Who are you?":
   input("")
   print("Coming Soon...")
 
-elif b=="Lets go.":\
+elif b=="Lets go.":
     print("You get up and run towards this old ship.")
     input("")
     print("Without any trouble you leave the place as soon as your ghost fixes it.")
