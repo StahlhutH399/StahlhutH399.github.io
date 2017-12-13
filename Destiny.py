@@ -53,40 +53,6 @@ def Fight():
     response = input("(Tell me... Who are you?/Lets go.)")
     return response
 
-if b=="Tell me... Who are you?":
-  print("Ghost: Fine... I am your Ghost, the traveler has sent me centuries ago to find you, now I have found you. Now lets get out of here!")
-  input("")
-  print("You push on forward to this body with a gun next to it. You check if it has ammo and luckily it does.")
-  input("")
-  print("You then find an old ship.")
-  input("")
-  print("Ghost: Let me see if I can start this up.")
-  input("")
-  print("Your Ghost then levitates to the ship and fixes it.")
-  input("")
-  print("Suddenly, the fallen captain has appeared and looks angry.")
-  input("")
-  print("You hear behind you a ear shattering, spine shivering scream come from the captain.")
-  input("")
-  print("You: Hurry up!")
-  input("")
-  print("Ghost: Almost done!")
-  input("")
-  print("You shoot the unlimited fallen that run towards you and you end up running out of ammo.")
-  input("")
-  print("Ghost: Alright it's ready, but it can only reach the city.")
-  input("")
-  print("Your Ghost transmats you into the ship and it flies away just in time.")
-  input("")
-  print("Coming Soon...")
-
-elif b=="Lets go.":
-    print("You get up and run towards this old ship.")
-    input("")
-    print("Without any trouble you leave the place as soon as your ghost fixes it.")
-    input("")
-    print("Coming Soon... ")
-
 if a=="Tell me... Who are you?":
   print("Ghost: Fine... I am your Ghost, the traveler has sent me centuries ago to find you, now I have found you. Now lets get out of here!")
   input("")
@@ -121,4 +87,40 @@ elif a=="Lets go.":
     input("")
     print("Coming Soon... ")
    
+
+
+if b=="Tell me... Who are you?":
+  print("Ghost: Fine... I am your Ghost, the traveler has sent me centuries ago to find you, now I have found you. Now lets get out of here!")
+  input("")
+  print("You push on forward to this body with a gun next to it. You check if it has ammo and luckily it does.")
+  input("")
+  print("You then find an old ship.")
+  input("")
+  print("Ghost: Let me see if I can start this up.")
+  input("")
+  print("Your Ghost then levitates to the ship and fixes it.")
+  input("")
+  print("Suddenly, the fallen captain has appeared and looks angry.")
+  input("")
+  print("You hear behind you a ear shattering, spine shivering scream come from the captain.")
+  input("")
+  print("You: Hurry up!")
+  input("")
+  print("Ghost: Almost done!")
+  input("")
+  print("You shoot the unlimited fallen that run towards you and you end up running out of ammo.")
+  input("")
+  print("Ghost: Alright it's ready, but it can only reach the city.")
+  input("")
+  print("Your Ghost transmats you into the ship and it flies away just in time.")
+  input("")
+  print("Coming Soon...")
+
+elif b=="Lets go.":
+    print("You get up and run towards this old ship.")
+    input("")
+    print("Without any trouble you leave the place as soon as your ghost fixes it.")
+    input("")
+    print("Coming Soon... ")
+
  
