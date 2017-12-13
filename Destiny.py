@@ -38,7 +38,7 @@ x = greeting()
 if x=="Who are you?":
     y = haters()
     if y=="Hide":
-        Hide()
+        a = Hide()
     elif y=="Fight":        
         print("You try to punch them since you have no weapon but end up being killed from being shot with the electricity gun that they have.")
         input("")
@@ -49,7 +49,6 @@ if x=="Who are you?":
         print("You gasp for air and look at the shell that has revived you.")
         response = input("(Tell me... Who are you?/Lets go.)")
 
-a = Hide()
 
 if a=="Tell me... Who are you?":
   print("Ghost: Fine... I am your Ghost, the traveler has sent me centuries ago to find you, now I have found you. Now lets get out of here!")
