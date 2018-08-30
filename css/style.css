@@ -19,11 +19,19 @@
     
     .button_1{
         height:38px;
-        background:#e8419d;
+        background:#e8491d;
         border:0;
         padding-left:20px;
         padding-right:20px;
         color:#ffffff;
+    }
+    
+    .dark{
+        padding:15px;
+        background:#35424a;
+        color:#ffffff;
+        margin-top:10px;
+        margin-bottom:10px;
     }
     
     /*Header*/
@@ -74,7 +82,7 @@
     /*Showcase*/
     #showcase{
         min-height:400px;
-        background:url('../img/lebron.jpg') no-repeat 0 -400px;
+        background:url('../img/kobe.png') no-repeat 0 -400px;
         text-align:center;
         color:#ffffff;
     }
@@ -101,7 +109,7 @@
     }
     
     #newsletter form{
-        foat:right;
+        float:right;
         margin-top:15px;
     }
     
@@ -125,6 +133,19 @@
     
     #boxes .box img{
         width:90px;
+    }
+    
+    /*Sidebar*/
+    aside#sidebar{
+        float-right:right;
+        width:30%;
+        margin-top:10px;
+    }
+        
+    /*Main-col*/
+    article#main-col{
+        float:left;
+        width:65%;
     }
     
     footer{
