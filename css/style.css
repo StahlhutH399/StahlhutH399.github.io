@@ -135,6 +135,10 @@
         width:90px;
     }
     
+    #boxes .box a{
+        text-decoration: none;
+    }
+    
     /*Sidebar*/
     aside#sidebar{
         float:right;
