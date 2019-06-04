@@ -11,6 +11,7 @@
 
 import processing.pdf.*;
 
+//Variables used for each object
 PFont font1; PFont font2; PFont bold;
 PImage bg; PImage bgR; PImage cat; PImage cat2; PImage costume;
 int x; int cx; int cy; int cVy;
@@ -23,7 +24,7 @@ PImage back2; int fireCount; int bulletCount;
 boolean isShooting; boolean bull;
 PImage ghost; int gx; int gy;
 
-
+//Images, fonts, and game setup before gameplay...
 void setup(){
   isShooting = true;
   bull = false;
@@ -61,7 +62,7 @@ void draw(){
         highScore = score;
   }
   if(gameState==0){
-  //Background goes on top!  (first!)
+  //Makes background primary layer...
   image(bg, x, 0);
   image(bgR, x+bg.width-6, 0);
   image(bg, x+2*bg.width -12, 0);
@@ -69,7 +70,7 @@ void draw(){
     x=0;
   } 
 
-  //KNIFE CODE!!
+  //Code for knife...
   for(int i = 0; i<numKnives ; i++){
     kx[i]-= 2;
     if(kx[i] < -10){
@@ -87,7 +88,7 @@ void draw(){
     }
     image(knife, kx[i], ky[i]);
     
-    //Bullet Code
+    //Code for bullet...
     if(score >10){
       bx -= 3;
       if(score > 20){
@@ -104,7 +105,7 @@ void draw(){
     }     
   }
   
-  //CAT CODE!!!
+  //Code for cat...
   image(costume, cx,cy);
   cy = cy + cVy;
   if(count%2 ==0){
@@ -113,7 +114,7 @@ void draw(){
   x--;
   checkCat();
   
-  //FIREBALL CODE
+  //Fireball code...
   image(fire, fx, fy);
   fx += 10;
   if(abs((int)((fx+10)-(bx+75))) < 80 && abs((int)((fy+10) - (by+52))) < 86){
@@ -131,22 +132,20 @@ void draw(){
   if(fx > width + 20){
     fx = 20000;
   } 
- //END GAMESTATE 0 
  }
 
-  //Mario Dies:
+  //When you die in game...
   if(gameState==1){
 
-    //BEGIN BUTTON
-    textSize(34);   //SIZE OF TEXT
+    //Button to try again...
+    textSize(34);   //Size of text...
     fill(245);
     text("You died!!!", 100,146);
     fill(245); 
-    rect(90,160, 240, 45, 10);  //BACKGROUND OF BUTTON
+    rect(90,160, 240, 45, 10);  //Button creation...
     fill(0);
-    //END BUTTON
     
-    //RESTART GAME
+    //Restarts game if mouse clicks the button...
     if(mouseX > 90 && mouseY > 160 && mouseX < 330 && mouseY < 205){
       if (mousePressed){
         cy = 100;
@@ -163,19 +162,19 @@ void draw(){
         gameState=0;             
       }
  
-      else{  //HOVER OVER BUT NOT CLICK
+      else{  //Gives different color and text when mouse hovers over the button...
         fill(255,0,0);
         rect(90,160, 240, 45, 10);
         fill(0);
-        text("Play Again?", 100,196);  //TEXT ON BUTTON
+        text("Play Again?", 100,196); 
       }
     }
     else{
-      text("Click Me!!", 100,196);  //TEXT ON BUTTON
+      text("Click Me!!", 100,196); 
     }  
   }
   
-  //TEXT TO SCREEN
+  //Gameplay text...
   fill(245);
   textSize(18);
   text("Score: " + score, width -130, 30);
@@ -187,6 +186,7 @@ void draw(){
     fill(245);
     textSize(16);
   }
+  //In-Game tutorial...
   if(fireCount < 1 && score > 0){
     if(score <5){
       fill(245);
@@ -210,7 +210,7 @@ void draw(){
      text("WOW!  Fireballs can destroy Bullets!", 140, 60);
    }
   
-  //START SCREEN
+  //Start screen...
   if(gameState == -1){
     image(back2,0,0);
     fill(0,0,0, 151);
@@ -234,7 +234,6 @@ void draw(){
   }
   
 }
-//END DRAW
 
 
 void move(){
@@ -277,10 +276,6 @@ void checkCat(){
   if(cy > height || cy < -80){
     gameState =1;
   }
-}
-
-void chaseMario(){
-   //TODO 
 }
 
 </script>
