@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Processing Demo 2.0</title>
+<title>Flappy Superman Game</title>
 <script type="text/javascript" src="processing.js"></script>
 </head>
 <body>
@@ -35,8 +35,8 @@ void setup(){
   size(800,448);
   bg = loadImage("img/bg2.png");
   bgR = loadImage("img/bg2.png");
-  cat = loadImage("img/c2.png");
-  cat2 = loadImage("img/c2.png");
+  cat = loadImage("img/c3.png");
+  cat2 = loadImage("img/c3.png");
   costume = cat;
   knife = loadImage("img/ob.png");
   bullet = loadImage("img/bul.png");
@@ -88,7 +88,7 @@ void draw(){
     }
     image(knife, kx[i], ky[i]);
     
-    //Code for bullet...
+    //Code for hadouken...
     if(score >10){
       bx -= 3;
       if(score > 20){
@@ -105,7 +105,7 @@ void draw(){
     }     
   }
   
-  //Code for cat...
+  //Code for superman...
   image(costume, cx,cy);
   cy = cy + cVy;
   if(count%2 ==0){
@@ -190,7 +190,7 @@ void draw(){
   if(fireCount < 1 && score > 0){
     if(score <5){
       fill(245);
-      text("Did you know Flappy can shoot FIREBALLS?", 120, 30);
+      text("Did you know Superman can shoot FIREBALLS?", 120, 30);
     }
     else{
        fill(245);    
@@ -228,7 +228,7 @@ void draw(){
     
     fill(0,0,0, 255);
     textFont(bold);
-    text("FLAPPY CONTROLS", 25, 115);
+    text("SUPERMAN CONTROLS", 25, 115);
     noFill();
     rect(10, 125, 262,75, 5);
   }
