@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Processing Demo</title>
+<title>Processing Demo 2.0</title>
 <script type="text/javascript" src="processing.js"></script>
 </head>
 <body>
@@ -139,6 +139,7 @@ void draw(){
 
     //BEGIN BUTTON
     textSize(34);   //SIZE OF TEXT
+    fill(245);
     text("You died!!!", 100,146);
     fill(245); 
     rect(90,160, 240, 45, 10);  //BACKGROUND OF BUTTON
@@ -175,7 +176,7 @@ void draw(){
   }
   
   //TEXT TO SCREEN
-  fill(0);
+  fill(245);
   textSize(18);
   text("Score: " + score, width -130, 30);
   text("High Score: " + highScore, width - 130, 50);
@@ -183,24 +184,29 @@ void draw(){
     fill(255,50,50);
     textSize(50);
     text("WARNING! ROCKETS!!! ", 160, 110);
-    fill(0);
+    fill(245);
     textSize(16);
   }
   if(fireCount < 1 && score > 0){
     if(score <5){
+      fill(245);
       text("Did you know Flappy can shoot FIREBALLS?", 120, 30);
     }
     else{
+       fill(245);    
        text("Use the DOWN ARROW to shoot", 120, 30);
     }
   }
   if(!isShooting && fireCount >0 && score > 3){
+     fill(245); 
      text("Nice Job!  You Learned to Shoot", 120, 30);
      if(fireCount > 3){
+        fill(245); 
         text("I wonder what things can be killed by fireballs?", 140, 60);
      }
    }
    if(bull){
+     fill(245);  
      text("WOW!  Fireballs can destroy Bullets!", 140, 60);
    }
   
